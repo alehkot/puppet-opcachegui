@@ -8,7 +8,7 @@
 #
 # === Requirements
 #
-class opcachegui ( $settings ) {
+class opcachegui () {
 
   exec { 'exec mkdir -p /usr/share/php/opcachegui/source':
     command => "mkdir -p /usr/share/php/opcachegui/source",
