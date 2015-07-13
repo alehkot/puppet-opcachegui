@@ -24,6 +24,6 @@ class opcachegui () {
   exec { 'php-move-opcachegui':
     command => "cp -r /tmp/opcachegui/* /usr/share/php/opcachegui/source",
     creates => "/usr/share/php/opcachegui/source/index.php",
-    require => [ Exec["php-extract-opcachegui"], Exec["exec mkdir -p /usr/share/php/opcachegui/source"] ],
+    require => [ Exec["php-download-opcachegui"], Exec["exec mkdir -p /usr/share/php/opcachegui/source"] ],
   }
 }
