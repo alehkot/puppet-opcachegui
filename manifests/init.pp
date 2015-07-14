@@ -17,7 +17,7 @@ class opcachegui () {
 
   exec { 'php-download-opcachegui':
     cwd     => "/tmp",
-    command => "git clone https://github.com/PeeHaa/OpCacheGUI.git opcachegui",
+    command => "git clone https://github.com/alehkot/OpCacheGUI.git opcachegui",
     creates => "/usr/share/php/opcachegui/source/index.php",
   }
 
